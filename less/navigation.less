@@ -1,1 +1,38 @@
 // Navigation Styles here
+.navigation {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px dashed gray;
+
+    h1 {
+        width: 20%;
+        margin: 1%;
+    }
+
+    nav {
+        margin: 1%;
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        font-size: 2rem;
+        text-decoration: none;
+        margin: 3%;
+        color: black;
+    }
+    @media @mobile {
+        flex-wrap: wrap;
+
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+        nav {
+            width: 100%;
+            margin: 0 5%;
+            justify-content: space-between;
+        }
+      }
+}
